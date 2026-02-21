@@ -24,7 +24,6 @@
 
 <body>
 
-
   <button class="btn btn-primary d-md-none position-sticky top-0 start-0 m-3" data-bs-toggle="offcanvas"
     data-bs-target="#sidebar">
     <i class="fa-solid fa-bars"></i>
@@ -34,6 +33,12 @@
     <div class="row">
       <div class="col-md-2 p-0">
         <div class="offcanvas-md offcanvas-start text-bg-primary h-100" id="sidebar">
+          
+          <!-- Mobile Close Button -->
+          <div class="offcanvas-header d-md-none">
+            <h5 class="offcanvas-title text-white">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#sidebar"></button>
+          </div>
 
           <div class="offcanvas-body text-center pt-5">
 
@@ -137,18 +142,17 @@
           </div>
         </div>
       </div>
+
     </div>
     <footer id="contact-us" class="p-4">
       <h4>Contact Us</h4>
-      <Address>
+      <address>
         <p>Luminar Technolab, Calicut </p>
         <p>671 438</p>
         <p><i class="fa-solid fa-phone"></i>9895876138</p>
         <a href="https://wa.me/9895876138" class="nav-link"><i class="fa-brands fa-square-whatsapp"></i>Contact Us</a>
-      </Address>
+      </address>
     </footer>
-  </div>
-  </div>
   </div>
 </body>
 
