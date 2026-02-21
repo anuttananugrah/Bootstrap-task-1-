@@ -11,16 +11,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script><script>
-  document.querySelectorAll('#sidebar .nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      const offcanvas = bootstrap.Offcanvas.getInstance(
-        document.getElementById('sidebar')
-      );
-      offcanvas.hide();
-    });
-  });
-</script>
+    crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
@@ -49,8 +40,9 @@
             <nav class="nav flex-column text-center justify-content-center">
               <div class="mb-3 text-center ">
                 <i class="fa-solid fa-gift"></i>
-                <a href="#home" class="nav-link text-white text-bold">
+                <a href="#home" class="nav-link text-white text-bold" data-bs-dismiss="offcanvas">
                   <h4 class="brand-font mb-5">Neaty</h4>
+
                 </a>
               </div>
               <a class="nav-link text-white" data-bs-dismiss="offcanvas" href="#Welcome">Welcome</a>
